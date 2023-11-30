@@ -4,7 +4,6 @@
 
         $query = "UPDATE productos SET 
                     descripcion_producto = '".$_POST['descripcion_producto']."',
-                    imagen_producto = '".$_POST['imagen_producto']."',
                     stock_producto = '".$_POST['stock_producto']."',
                     precio_producto = '".$_POST['precio_producto']."'
                   WHERE id_producto = '".$_POST['id_producto']."'";
@@ -46,10 +45,6 @@
                     <div class="form-group">
                         <label for="descripcion_producto">Descripción del producto:</label>
                         <input type="text" class="form-control" id="descripcion_producto" name="descripcion_producto" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="imagen_producto">Imagen del producto:</label>
-                        <input type="text" class="form-control" id="imagen_producto" name="imagen_producto">
                     </div>
                     <div class="form-group">
                         <label for="id_producto">Código:</label>
